@@ -1,0 +1,60 @@
+/* FullImageView.css */
+.FullImageView {
+    align-items: center;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    gap: 30px;
+    inset: 0;
+    justify-content: center;
+    position: fixed;
+    z-index: 999;
+  }
+  
+ img{
+    height: 80%;
+    object-fit: cover;
+    width: 60vw;
+ }
+  
+  .CloseButton {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    border-radius: 50%;
+    font-size: 40px;
+    width: 40px;
+  }
+  
+  .NavButton {
+    align-items: center;
+    aspect-ratio: 1;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: 800;
+    justify-content: center;
+    outline: none;
+    transition: .3s;
+    width: 60px;
+    color: black;
+  }
+  
+  .NavButton.left {
+    left: 10px;
+  }
+  
+  .NavButton.right {
+    right: 10px;
+  }
+  
+  .NavButton:hover {
+    color: lightgray;
+  }
+  .CloseButton:hover{
+    background-color: rgb(205, 62, 62);
+    cursor: pointer;
+    color: white;
+  }
+  
